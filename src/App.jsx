@@ -82,24 +82,27 @@ export default function Portfolio() {
           <div className="absolute top-1/2 right-0 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse delay-700"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto w-full text-center">
-          <div className="mb-6 animate-fade-in">
-            <p className="text-2xl font-bold text-gray-300 mb-4">Ayush Kushwaha</p>
-          </div>
+        <div className="max-w-6xl mx-auto w-full text-center px-4">
           <div className="mb-8 animate-fade-in">
-            <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto bg-gradient-to-br from-blue-500 via-cyan-500 to-purple-600 rounded-full flex items-center justify-center text-5xl sm:text-6xl font-bold shadow-2xl animate-bounce">
+            <p className="text-3xl sm:text-4xl font-bold text-white mb-6">Ayush Kushwaha</p>
+          </div>
+          <div className="mb-12 animate-fade-in">
+            <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto bg-gradient-to-br from-blue-500 via-cyan-500 to-purple-600 rounded-full flex items-center justify-center text-6xl sm:text-7xl font-bold shadow-2xl animate-bounce">
               AK
             </div>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-4 leading-tight animate-fade-in">
-            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Building Systems at Scale
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent block">
+              Building Systems
+            </span>
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-500 bg-clip-text text-transparent block">
+              at Scale
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl bg-gradient-to-r from-cyan-300 to-blue-300 bg-clip-text text-transparent mb-4 font-semibold">
+          <p className="text-xl sm:text-2xl font-semibold mb-4 text-cyan-300">
             Full Stack Engineer | System Designer | Problem Solver
           </p>
-          <p className="text-gray-400 text-base sm:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-300 text-lg sm:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
             Production-grade full-stack systems. 51% latency improvements. MAANG-level DSA skills (LeetCode Knight). Ready to make an impact.
           </p>
           
@@ -130,18 +133,18 @@ export default function Portfolio() {
       </section>
 
       {/* Quick Stats Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-blue-900/5 to-black">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-blue-900/5 to-black">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
             {[
               { stat: '600+', label: 'Problems Solved', color: 'text-blue-400' },
-              { stat: '1860', label: 'LeetCode Max Rating', color: 'text-cyan-400' },
-              { stat: '51%', label: 'Latency Improvement', color: 'text-green-400' },
-              { stat: '5x', label: 'Query Performance', color: 'text-purple-400' }
+              { stat: '1860', label: 'LeetCode Rating', color: 'text-cyan-400' },
+              { stat: '51%', label: 'Latency Cut', color: 'text-green-400' },
+              { stat: '5x', label: 'Performance Gain', color: 'text-purple-400' }
             ].map((item, idx) => (
-              <div key={idx} className="text-center p-4 bg-slate-900/40 rounded-xl border border-slate-700/50 hover:border-blue-500/30 transition-all">
-                <p className={`text-2xl sm:text-3xl font-bold ${item.color} mb-1`}>{item.stat}</p>
-                <p className="text-xs sm:text-sm text-gray-400">{item.label}</p>
+              <div key={idx} className="text-center p-6 bg-slate-900/60 rounded-xl border border-slate-700/50 hover:border-blue-500/30 transition-all hover:bg-slate-800">
+                <p className={`text-3xl sm:text-4xl font-bold ${item.color} mb-2`}>{item.stat}</p>
+                <p className="text-sm sm:text-base text-gray-300 font-medium">{item.label}</p>
               </div>
             ))}
           </div>
@@ -184,7 +187,7 @@ export default function Portfolio() {
                   </div>
                 </div>
                 
-                <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
+                <p className="text-gray-200 mb-6 leading-relaxed text-base sm:text-lg">
                   Production MERN app with RBAC, real-time geolocation, and booking workflows. Deployed to production with robust monitoring and error handling.
                 </p>
 
